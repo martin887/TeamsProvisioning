@@ -3,34 +3,34 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "appName": {
-        "value": "(your app name)"
+        "value": "TeamsProvdemolab"
       },
       "repoUrl": {
-        "value": "(your github repo URL like https://github.com/PnP/OrchestratedProvisioning.git)"
+        "value": "https://github.com/martin887/TeamsProvisioning.git"
       },
       "branch": {
-        "value": "(your github branch like master"
+        "value": "master"
       },
       "storageNamePrefix": {
-        "value": "(prefix for storage account name, max of 11 lower case letters like oprovprod)"
+        "value": "teamsproddemolabs"
       },
       "TENANT": {
-        "value": "(your tenant ID)"
+        "value": "6978fcc2-99f8-4fb4-be5c-057364fdcd91"
       },
       "TENANT_NAME": {
-        "value": "(your tenant name without .onmicrosoft.com)"
+        "value": "mydemolabtest"
       },
       "CLIENT_ID": {
-        "value": "(your Azure AD v1 app id with app permissions)"
+        "value": "b826f819-8de6-46a1-b59c-0a25022e0c26"
       },
       "CLIENT_SECRET": {
-        "value": "@Microsoft.KeyVault(SecretUri=(url of your keyvault secret))"
+        "value": "@Microsoft.KeyVault(SecretUri=https://teamsprovlabvault.vault.azure.net/secrets/teamsprovkey/c76ed0363b8943e78e9e02f8cc3b4debnOYM._M2SlJqxL22whITXg~F46maf_0p.j)"
       },
       "TEMPLATE_SITE_URL": {
-        "value": "(your SharePoint site for holding templates like /sites/TeamsProvisioning)"
+        "value": "https://mydemolabtest.sharepoint.com/sites/SiteRequests"
       },
       "TEMPLATE_LIB_NAME": {
-        "value": "(your SharePoint document library for templates like Templates)"
+        "value": "Templates"
       }
     }
   }

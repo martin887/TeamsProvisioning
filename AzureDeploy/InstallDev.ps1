@@ -1,11 +1,11 @@
 # Provision storage and function app
 .\Deploy-AzureResourceGroup.ps1 `
     -ResourceGroupLocation EastUS `
-    -ResourceGroupName OrchestratedProvisioningDev `
-    -TemplateParametersFile dev.parameters.json
+    -ResourceGroupName TeamsProvDev`
+    -TemplateParametersFile sample.parameters.json
 
 # Ensure storage queues are in place
-$storageAccount = Get-AzureRmStorageAccount | Where-Object ResourceGroupName -eq "OrchestratedProvisioningDev"
+$storageAccount = Get-AzureRmStorageAccount | Where-Object ResourceGroupName -eq "TeamsProvDev"
 $storageContext = $storageAccount.Context
 New-AzureStorageQueue -Name "create-team-request-queue" -Context $storageContext -ErrorAction Ignore
 New-AzureStorageQueue -Name "create-team-completion-queue" -Context $storageContext -ErrorAction Ignore
